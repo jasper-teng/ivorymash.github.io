@@ -1,0 +1,74 @@
+.row{
+    margin:auto;
+    width: 400px;
+}
+
+.cell{
+    float:left;
+    width: 50px;
+    height:50px;
+    transition: background-color 0.5s;
+}
+
+.row p{
+    text-align:center;
+}
+
+.leftarrow{
+    margin-top: 175px;
+    margin-right: 10px;
+    float: right;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 75px solid black;
+    border-bottom: 50px solid transparent;
+    transition: border-right 0.5s; 
+    display: none;
+    /*poggers champion*/
+}
+
+.leftarrow:hover{
+    border-right: 75px solid pink;
+    transition: border-right 0.5s; 
+}
+
+.rightarrow{
+    margin-top: 175px;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 75px solid black;
+    border-bottom: 50px solid transparent;
+    transition: border-left 0.5s; 
+    display: none;
+    /*loggers champion*/
+}
+
+.rightarrow:hover{
+    border-left: 75px solid pink;
+    transition: border-left 0.5s; 
+}
+
+.containerofpain {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: center; /* switched from default (flex-start, see below) */
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
