@@ -1,0 +1,96 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <script src="BR.js"></script>
+</head>
+
+<body onload="viewAllBR()">
+
+  <div class="containerofpain">
+    <h1>BR rule Creator</h1>
+  </div>
+
+  <div class="containerofpain">
+
+  </div>
+  <div class="containerofpain">
+
+    <table id="bruh">
+      <tr>
+        <th>CommType ID</th>
+        <th>Rule</th>
+        <th>RuleType</th>
+        <th>RuleValue</th>
+        <th>SubRule</th>
+      </tr>
+      <tr>
+        <td><input id = "CommTypeID"></td>
+        <td>
+          <select id="Rule" class="rule">
+            <option value="0">MemberSize</option>
+            <option value="1">PositionCount</option>
+            <option value="2">EligibilityNominee</option>
+            <option value="3">MemberAge</option>
+            <option value="4">PRPercentage</option>
+            <option value="5">PRLocked</option>
+            <option value="6">ConsecutiveTerm</option>
+            <option value="7">ConsecutiveYears</option>
+            <option value="8">AllowedPositions</option>
+            <option value="9">PositionAge</option>
+            <option value="10">PreviousPosition</option>
+            <option value="11">LengthOfServiceAcrossAllComms</option>
+            <option value="12">SameZone</option>
+            <option value="13">LengthOfServiceInCommType</option>
+            <option value="14">MemberOfAnotherCommittee</option>
+          </select>
+        </td>
+        <td>
+          <select id="RuleType" class="ruleType">
+            <option value="0">AssistantGeneralSecretary</option>
+            <option value="1">BlockRepresentative</option>
+            <option value="2">GeneralSecretary</option>
+            <option value="3">GrassrootsSenior</option>
+            <option value="4">HonoraryChairman</option>
+            <option value="5">ImmediatePastChairman</option>
+            <option value="6">ViceChairman</option>
+            <option value="7">MaxMemberAge</option>
+            <option value="8">MinMemberAge</option>
+            <option value="9">PRPercentage</option>
+            <option value="10">MinMemberCount</option>
+            <option value="11">MaxMemberCount</option>
+            <option value="12">AllowedPositions</option>
+            <option value="13">Chairman</option>
+            <option value="14">Treasurer</option>
+            <option value="15">MinPositionAge</option>
+            <option value="16">MaxPositionAge</option>
+            <option value="17">PRLock</option>
+            <option value="18">ExcludePositionFromCount</option>
+          </select>
+        </td>
+        <td><input id = "RuleValue"></td>
+        <td><input id = "SubRule"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="containerofpain">
+    <button type="button" onclick=PostRuleFn()>Add BR</button>
+  </div>
+
+
+  <div class="containerofpain">
+    <a id="BRLog">bruh</a>
+  </div>
+
+  <div class="containerofpain1">
+    <div class="containerofpain1" id="brviewer">
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>

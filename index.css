@@ -58,6 +58,12 @@
     justify-content: center; /* switched from default (flex-start, see below) */
 }
 
+.containerofpain2 {
+    flex-direction: row;
+    flex-wrap: wrap;              /* default value; can be omitted */
+    justify-content: center; /* switched from default (flex-start, see below) */
+}
+
 .loader {
     border: 8px solid #f3f3f3;
     border-radius: 50%;
@@ -75,4 +81,38 @@
 
   th {
     text-align: left;
+  }
+
+  details {
+  }
+  
+  details>summary span.icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+    margin-left: auto;
+  }
+  
+  details[open] summary span.icon {
+    transform: rotate(180deg);
+    background-color: blue;
+  }
+  
+  summary {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .one {
+    color: green;
+  }  
+ .two {
+    color: red;
+  }  
+  .three {
+    color: blue;
   }

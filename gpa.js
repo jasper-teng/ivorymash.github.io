@@ -80,3 +80,13 @@ function calcGPA(){
     console.log("Semester GPA: " + sumOfGradeTimesCredit/totalCreds);
     GPA.innerHTML = sumOfGradeTimesCredit/totalCreds;
 }
+
+function viewAllBR(){
+    console.log("ur mum");
+    console.log("ur mum");
+    console.log("ur mum");
+    console.log("ur mum");
+    console.log("ur mum");
+    console.log("ur mum");
+    console.log("ur mum");
+}
